@@ -1,0 +1,7 @@
+Total Pipeline Length (km): 2594.41
+Number of Sensors: 173
+Number of Soil/Landcover Points: 1277
+Pipelines Bounding Box (minx, miny, maxx, maxy): [225789.97594501468, 156290.692702269, 564591.2062939424, 713067.1378764794]
+Sensors Bounding Box (minx, miny, maxx, maxy): [230213.86166002706, 164579.92123571452, 559030.8421886669, 701977.3927796565]
+Soil Points Bounding Box (minx, miny, maxx, maxy): [37774.51112837874, -41979.787931176084, 672341.1385541938, 1121237.7296964824]
+Missing Values in Merged Sensor Data: {'sensor_id': 0, 'pipeline_id': 0, 'lon': 0, 'lat': 0, 'temperature': 0, 'vibration': 0, 'strain': 0, 'geometry': 0, 'elevation': 0, 'slope': 0, 'soil_ph': 0, 'soil_clay_pct': 0, 'soil_sand_pct': 0, 'soil_organic_carbon': 0, 'distance_to_nearest_soil': 0, 'pipeline_name': 0, 'pipeline_operator': 0, 'pipeline_diameter_mm': 0, 'pipeline_material': 0, 'pipeline_status': 0, 'pipeline_type': 0, 'pipeline_length_km': 0, 'pipeline_length_m': 0, 'pipeline_geometry': 0, 'distance_to_pipeline': 0}

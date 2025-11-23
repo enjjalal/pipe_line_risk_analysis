@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UK Geospatial Data Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .plot {
+            margin: 20px 0;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .plot img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #eee;
+        }
+        .stats {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .stat-box {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>UK Geospatial Data Report</h1>
+    
+    <div class="stats">
+        <h2>Summary Statistics</h2>
+        <div class="stat-grid">
+            <div class="stat-box">
+                <h3>Pipeline Network</h3>
+                <p>Total Pipelines: 55</p>
+                <p>Total Length: 3,437.5 km</p>
+                <p>Average Length: 62.5 km</p>
+                <p>Average Diameter: 264.5 mm</p>
+                <h4>Operators:</h4>
+                <ul>
+                    <li>National Grid Transco: 17 pipelines</li>
+                    <li>BritGas Networks: 13 pipelines</li>
+                    <li>Wales & West Utilities: 12 pipelines</li>
+                    <li>Cadent Gas: 8 pipelines</li>
+                    <li>SGN Gas: 5 pipelines</li>
+                </ul>
+            </div>
+            
+            <div class="stat-box">
+                <h3>Sensor Network</h3>
+                <p>Total Sensors: 2,636</p>
+                <p>Avg Temperature: 15.1°C</p>
+                <p>Avg Vibration: 0.50 Hz</p>
+                <p>Avg Strain: 97.2 µε</p>
+            </div>
+            
+            <div class="stat-box">
+                <h3>Terrain & Land Cover</h3>
+                <p>Min Elevation: 0.0 m</p>
+                <p>Max Elevation: 1,300.0 m</p>
+                <p>Mean Elevation: 150.2 m</p>
+                <p>Urban: 4.2%</p>
+                <p>Agriculture: 45.8%</p>
+                <p>Water: 47.5%</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="plot">
+        <h2>Aligned Geospatial Visualization</h2>
+        <p>This visualization shows the properly aligned layers with accurate coordinate matching:</p>
+        <img src="aligned_maps.png" alt="Aligned Geospatial Data">
+        <div class="map-legend">
+            <h4>Map Legend:</h4>
+            <ul>
+                <li><strong>Top Panel:</strong> Land cover with pipelines (red) and sensor locations (black dots)</li>
+                <li><strong>Bottom Panel:</strong> Terrain elevation with pipeline network</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="plot">
+        <h2>Individual Dataset Visualizations</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Pipeline Network</h3>
+                <img src="pipeline_map1.png" alt="Pipeline Network">
+            </div>
+            <div class="grid-item">
+                <h3>Land Cover</h3>
+                <img src="landcover_map.png" alt="Land Cover">
+            </div>
+            <div class="grid-item">
+                <h3>Terrain</h3>
+                <img src="terrain_map.png" alt="Terrain">
+            </div>
+            <div class="grid-item">
+                <h3>Sensor Network</h3>
+                <img src="sensors_map.png" alt="Sensors">
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .grid-item {
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 5px;
+            background: white;
+        }
+        .grid-item h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .map-legend {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+        .map-legend h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .map-legend ul {
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+    </style>
+    
+    <div style="text-align: center; margin: 30px 0; color: #666; font-size: 0.9em;">
+        Report generated on November 20, 2025
+    </div>
+</body>
+</html>

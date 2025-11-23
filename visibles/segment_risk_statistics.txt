@@ -1,0 +1,23 @@
+=== Segment Risk Statistics ===
+
+count    6806.000000
+mean        0.257247
+std         0.065104
+min         0.123548
+25%         0.211661
+50%         0.252521
+75%         0.297197
+max         0.448639
+
+=== Risk Categories ===
+High-risk threshold (67th percentile): 0.2790
+Number of high-risk segments: 2193
+Percentage of high-risk segments: 32.22%
+
+=== Top 5 Highest Risk Segments ===
+   segment_id pipeline_id  risk_score
+PIPE-00002_91  PIPE-00002    0.448639
+PIPE-00002_92  PIPE-00002    0.448639
+ PIPE-00016_0  PIPE-00016    0.448639
+ PIPE-00016_1  PIPE-00016    0.448639
+PIPE-00016_10  PIPE-00016    0.448639

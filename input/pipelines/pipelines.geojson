@@ -1,0 +1,1502 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00000",
+        "operator": "National Grid Transco",
+        "diameter_mm": 200,
+        "material": "steel",
+        "status": "inactive",
+        "type": "branch",
+        "length_km": 23.1260565263601
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.62,
+            54.97
+          ],
+          [
+            -1.6519166520810447,
+            55.17588363492056
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00001",
+        "operator": "Cadent Gas",
+        "diameter_mm": 150,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 37.97534846471995
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.6278932489044968,
+            55.02091670553866
+          ],
+          [
+            -1.374778601907946,
+            54.79074449752552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00002",
+        "operator": "SGN Gas",
+        "diameter_mm": 150,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 53.39192418636021
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4687886037186793,
+            54.87623338546171
+          ],
+          [
+            -1.7009613693460164,
+            55.29749911702007
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00003",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 400,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 19.62851239896716
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.25,
+            55.86
+          ],
+          [
+            -4.234592229243275,
+            55.68383908525579
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00004",
+        "operator": "National Grid Transco",
+        "diameter_mm": 200,
+        "material": "cast iron",
+        "status": "inactive",
+        "type": "branch",
+        "length_km": 50.83021301698673
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -2.24,
+            53.48
+          ],
+          [
+            -1.8597486263700282,
+            53.22483605735556
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00005",
+        "operator": "BritGas Networks",
+        "diameter_mm": 200,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 81.0976703505933
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.937174809597433,
+            53.27679213574554
+          ],
+          [
+            -1.3577886665890273,
+            53.32949733665662
+          ],
+          [
+            -1.2121208838312394,
+            53.36001990451185
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00006",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 300,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 46.218828556601146
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4510962876536382,
+            54.86014470982844
+          ],
+          [
+            -1.660515295386968,
+            54.500254658107394
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00007",
+        "operator": "Cadent Gas",
+        "diameter_mm": 300,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 78.37535243695677
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -0.9376829449738057,
+            52.279828302684926
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00008",
+        "operator": "National Grid Transco",
+        "diameter_mm": 150,
+        "material": "cast iron",
+        "status": "inactive",
+        "type": "branch",
+        "length_km": 138.67349497292517
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -1.4398202338448889,
+            52.89830923988917
+          ],
+          [
+            -1.781872449348361,
+            52.806358450519625
+          ],
+          [
+            -2.381147601791255,
+            52.68951112314048
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00009",
+        "operator": "BritGas Networks",
+        "diameter_mm": 150,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 39.315945328815275
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.62,
+            54.97
+          ],
+          [
+            -1.4133258009074874,
+            55.25764872697062
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00010",
+        "operator": "SGN Gas",
+        "diameter_mm": 200,
+        "material": "steel",
+        "status": "maintenance",
+        "type": "branch",
+        "length_km": 99.13459505018852
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.640854473300066,
+            53.303747600675194
+          ],
+          [
+            -1.6334839158442334,
+            53.000426106546435
+          ],
+          [
+            -1.619283198079025,
+            53.01154331659878
+          ],
+          [
+            -1.5746335162869043,
+            52.441631013059435
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00011",
+        "operator": "BritGas Networks",
+        "diameter_mm": 400,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 44.01071198993624
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.25,
+            55.86
+          ],
+          [
+            -3.9418678844341897,
+            55.610478017501755
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00012",
+        "operator": "Cadent Gas",
+        "diameter_mm": 150,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 47.868671694789576
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -1.5898532931360558,
+            52.98467131996243
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00013",
+        "operator": "National Grid Transco",
+        "diameter_mm": 250,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 22.186686307383773
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.064108334115253,
+            55.70946698296511
+          ],
+          [
+            -4.0399273402314115,
+            55.51105499580086
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00014",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 200,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 30.243155228804625
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -2.24,
+            53.48
+          ],
+          [
+            -2.412287785693277,
+            53.26892693682551
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00015",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 400,
+        "material": "composite",
+        "status": "inactive",
+        "type": "branch",
+        "length_km": 92.46770282486028
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.454696003115965,
+            54.86341814526971
+          ],
+          [
+            -1.142809639943091,
+            54.692887692348975
+          ],
+          [
+            -0.8549985691122887,
+            54.609822261981606
+          ],
+          [
+            -0.7352321628410745,
+            54.47811171198102
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00016",
+        "operator": "Cadent Gas",
+        "diameter_mm": 250,
+        "material": "steel",
+        "status": "maintenance",
+        "type": "branch",
+        "length_km": 53.792370380871944
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.6242873187969402,
+            54.99765605790156
+          ],
+          [
+            -1.768399821913475,
+            55.4603484015126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00017",
+        "operator": "National Grid Transco",
+        "diameter_mm": 150,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 143.28894100238838
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -0.7044644772978335,
+            53.1539163340031
+          ],
+          [
+            -0.5445869016008199,
+            53.201796517632545
+          ],
+          [
+            -0.48611250482651414,
+            53.392954382275086
+          ],
+          [
+            -0.06388829460360923,
+            53.44147541632221
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00018",
+        "operator": "SGN Gas",
+        "diameter_mm": 200,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 42.24352772090829
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5436974848977356,
+            54.70100801050817
+          ],
+          [
+            -1.20153372801208,
+            54.53439691963563
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00019",
+        "operator": "BritGas Networks",
+        "diameter_mm": 400,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 50.17255078018182
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.549232092931915,
+            55.06849462810497
+          ],
+          [
+            -1.100097020941531,
+            55.01764020090334
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00020",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 250,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 121.66336767979537
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -1.5164185308715945,
+            52.97466547875737
+          ],
+          [
+            -1.6750113646405533,
+            53.00167632673761
+          ],
+          [
+            -2.252736696032018,
+            53.01662958602176
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00021",
+        "operator": "BritGas Networks",
+        "diameter_mm": 400,
+        "material": "cast iron",
+        "status": "inactive",
+        "type": "branch",
+        "length_km": 44.1922001477253
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.6172996425580437,
+            55.145699148390925
+          ],
+          [
+            -1.5625796081560903,
+            55.54004869624275
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00022",
+        "operator": "BritGas Networks",
+        "diameter_mm": 200,
+        "material": "composite",
+        "status": "inactive",
+        "type": "branch",
+        "length_km": 38.191352499790916
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -2.2943647007603594,
+            53.41339676476844
+          ],
+          [
+            -1.9700427292308316,
+            53.528274244814476
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00023",
+        "operator": "National Grid Transco",
+        "diameter_mm": 250,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 127.73405218358276
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -0.3748109945988881,
+            52.97506343493469
+          ],
+          [
+            -0.010612186523425882,
+            53.00165518418015
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00024",
+        "operator": "National Grid Transco",
+        "diameter_mm": 200,
+        "material": "steel",
+        "status": "maintenance",
+        "type": "branch",
+        "length_km": 31.85942990207323
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.62,
+            54.97
+          ],
+          [
+            -1.6808494544889947,
+            54.68950238894572
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00025",
+        "operator": "National Grid Transco",
+        "diameter_mm": 200,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 20.98561212478593
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.242340955409391,
+            55.77243221862193
+          ],
+          [
+            -4.269756789328386,
+            55.58537101857114
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00026",
+        "operator": "National Grid Transco",
+        "diameter_mm": 400,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 61.125224489587666
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5397265944494387,
+            55.00494677904052
+          ],
+          [
+            -1.1931100627285642,
+            54.96946580600946
+          ],
+          [
+            -0.998575679597021,
+            54.914135866514165
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00027",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 200,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 95.37118492415982
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.133730718779164,
+            55.76584642077767
+          ],
+          [
+            -4.7104850911808365,
+            56.14690828873188
+          ],
+          [
+            -4.815440508871536,
+            56.27799952121372
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00028",
+        "operator": "BritGas Networks",
+        "diameter_mm": 250,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 31.357004341456037
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.8332410993790009,
+            54.585894948852555
+          ],
+          [
+            -1.0675039370213317,
+            54.42801952336442
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00029",
+        "operator": "National Grid Transco",
+        "diameter_mm": 250,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 40.59712554987912
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.136264742170481,
+            55.76789844492043
+          ],
+          [
+            -4.098272022198841,
+            56.13165963801856
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00030",
+        "operator": "Cadent Gas",
+        "diameter_mm": 250,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 110.36283661515374
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -2.0073646149797613,
+            53.470120887823406
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00031",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 250,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 28.14166677749434
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.0483249316482603,
+            52.61335704610587
+          ],
+          [
+            -1.1763655919663853,
+            52.394536789755115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00032",
+        "operator": "BritGas Networks",
+        "diameter_mm": 300,
+        "material": "cast iron",
+        "status": "maintenance",
+        "type": "branch",
+        "length_km": 128.91459452255958
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.9267766142202343,
+            52.77810487731145
+          ],
+          [
+            -0.7657630519248488,
+            52.80777999645741
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00033",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 400,
+        "material": "composite",
+        "status": "inactive",
+        "type": "branch",
+        "length_km": 55.34932646400701
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.6450985879749775,
+            54.854303088220945
+          ],
+          [
+            -1.8768438024157756,
+            55.295821580390424
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00034",
+        "operator": "National Grid Transco",
+        "diameter_mm": 250,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 42.17330311383987
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.25,
+            55.86
+          ],
+          [
+            -3.8891573398842976,
+            55.97894000894031
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00035",
+        "operator": "BritGas Networks",
+        "diameter_mm": 250,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 41.49277296715711
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -1.426753630314299,
+            52.68813076955041
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00036",
+        "operator": "Cadent Gas",
+        "diameter_mm": 400,
+        "material": "steel",
+        "status": "maintenance",
+        "type": "branch",
+        "length_km": 92.688064753054
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -1.0305184072717994,
+            53.09927219797605
+          ],
+          [
+            -0.8938098048494271,
+            53.44471565702654
+          ],
+          [
+            -0.8423813186654079,
+            53.705606783677425
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00037",
+        "operator": "Cadent Gas",
+        "diameter_mm": 300,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 20.595246035599818
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.7337775311900727,
+            55.34918893588983
+          ],
+          [
+            -1.6765116337901549,
+            55.172704569163216
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00038",
+        "operator": "National Grid Transco",
+        "diameter_mm": 300,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 44.97722360914356
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.026113901840382,
+            54.45591327501929
+          ],
+          [
+            -1.2491919968041247,
+            54.79417851993134
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00039",
+        "operator": "Cadent Gas",
+        "diameter_mm": 150,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 97.26733202142549
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.3009176783499835,
+            52.980458709419494
+          ],
+          [
+            -0.7712371076156876,
+            53.041117916024255
+          ],
+          [
+            -0.811648089339143,
+            53.05775024076249
+          ],
+          [
+            -1.1698079969356945,
+            53.06994123008469
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00040",
+        "operator": "National Grid Transco",
+        "diameter_mm": 400,
+        "material": "composite",
+        "status": "maintenance",
+        "type": "branch",
+        "length_km": 74.65486559977676
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.990121598223966,
+            55.64955334175226
+          ],
+          [
+            -3.7281363540898202,
+            55.59871302295188
+          ],
+          [
+            -3.340108138070355,
+            55.4803006286908
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00041",
+        "operator": "National Grid Transco",
+        "diameter_mm": 250,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 53.1174151239898
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.9080047166194323,
+            52.804144346983186
+          ],
+          [
+            -1.3666751752549176,
+            52.94059000040178
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00042",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 300,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 43.54824118695796
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.239704555727431,
+            52.95642884955918
+          ],
+          [
+            -1.4333685929478162,
+            53.29762427900816
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00043",
+        "operator": "National Grid Transco",
+        "diameter_mm": 400,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 83.8499493099597
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.9747129119222466,
+            53.06330061496343
+          ],
+          [
+            -0.9317325376362282,
+            53.009816688864575
+          ],
+          [
+            -0.8493590199259626,
+            52.97896526388928
+          ],
+          [
+            -0.6790118000419605,
+            52.83483450747064
+          ],
+          [
+            -0.45392528806133875,
+            52.870992356279174
+          ],
+          [
+            -0.3713968593443341,
+            52.74847992374549
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00044",
+        "operator": "SGN Gas",
+        "diameter_mm": 300,
+        "material": "cast iron",
+        "status": "maintenance",
+        "type": "branch",
+        "length_km": 111.52804345648218
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.944871776285722,
+            54.51066431990797
+          ],
+          [
+            -0.6075289415204153,
+            54.54834179156038
+          ],
+          [
+            -0.21079933964113454,
+            54.64441682897068
+          ],
+          [
+            -0.05695944906485402,
+            54.62604138064035
+          ],
+          [
+            0.015750927862386077,
+            54.697841420014434
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00045",
+        "operator": "BritGas Networks",
+        "diameter_mm": 300,
+        "material": "cast iron",
+        "status": "inactive",
+        "type": "branch",
+        "length_km": 123.12965865823757
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5822848970844434,
+            54.979442317679926
+          ],
+          [
+            -1.4402370133041669,
+            54.88363554433463
+          ],
+          [
+            -0.5332627892610273,
+            54.64462347657746
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00046",
+        "operator": "SGN Gas",
+        "diameter_mm": 400,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 35.84299590201846
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.13,
+            51.51
+          ],
+          [
+            0.3586441676732659,
+            51.28198107389042
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00047",
+        "operator": "National Grid Transco",
+        "diameter_mm": 250,
+        "material": "cast iron",
+        "status": "active",
+        "type": "branch",
+        "length_km": 29.08760451756987
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.2786974239454205,
+            54.76718720681498
+          ],
+          [
+            -1.4004864331145075,
+            54.53515725797822
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00048",
+        "operator": "BritGas Networks",
+        "diameter_mm": 200,
+        "material": "steel",
+        "status": "maintenance",
+        "type": "branch",
+        "length_km": 50.77479770671679
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.16,
+            52.95
+          ],
+          [
+            -1.5012877756175125,
+            52.64542584293483
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00049",
+        "operator": "National Grid Transco",
+        "diameter_mm": 200,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 146.47173572029075
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5932780723732083,
+            52.67961169917239
+          ],
+          [
+            -1.9496030858128477,
+            52.79046913773691
+          ],
+          [
+            -2.7937745682518593,
+            53.21829588439595
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00050",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 250,
+        "material": "composite",
+        "status": "active",
+        "type": "branch",
+        "length_km": 38.49659874332679
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.25,
+            55.86
+          ],
+          [
+            -4.511129723937374,
+            56.08823835622885
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00051",
+        "operator": "BritGas Networks",
+        "diameter_mm": 300,
+        "material": "cast iron",
+        "status": "maintenance",
+        "type": "branch",
+        "length_km": 43.02932327512981
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.25,
+            55.86
+          ],
+          [
+            -3.992121741113332,
+            56.14943485686448
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00052",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 250,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 49.151380156399256
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.2811022895231016,
+            52.981905517698934
+          ],
+          [
+            -0.3962779252070154,
+            53.409469596732
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00053",
+        "operator": "Wales & West Utilities",
+        "diameter_mm": 250,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 44.790334307168
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.25,
+            55.86
+          ],
+          [
+            -4.487351535569749,
+            56.186327802592174
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPE-00054",
+        "operator": "BritGas Networks",
+        "diameter_mm": 250,
+        "material": "steel",
+        "status": "active",
+        "type": "branch",
+        "length_km": 39.72374831098314
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -3.9085610976491254,
+            55.63372587839856
+          ],
+          [
+            -4.226470656429144,
+            55.79805968230807
+          ]
+        ]
+      }
+    }
+  ]
+}

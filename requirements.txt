@@ -1,0 +1,1 @@
+-e "numpy>=1.21.0\npandas>=1.3.0\ngeopandas>=0.10.0\nmatplotlib>=3.4.0\nseaborn>=0.11.0\nscipy>=1.7.0\nscikit-learn>=1.0.0\nshapely>=1.7.0\nxgboost>=1.5.0\njoblib>=1.1.0" 
