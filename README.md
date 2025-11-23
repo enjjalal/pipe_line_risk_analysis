@@ -13,28 +13,85 @@ This tool performs spatial risk analysis on pipeline infrastructure using sensor
 ## Prerequisites
 
 - Python 3.8+
-- Required Python packages (see `requirements.txt`)
-- GeoPandas and its dependencies (may require additional system libraries on some platforms)
+- Git
+- Windows/macOS/Linux (tested on Windows 10/11, Ubuntu 20.04+)
+- At least 4GB RAM (8GB recommended for larger datasets)
+- 500MB free disk space
+
+### System Dependencies
+
+**Windows:**
+- Install [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+- Install [Git for Windows](https://git-scm.com/download/win)
+
+**Ubuntu/Debian:**
+```bash
+sudo apt-get update
+sudo apt-get install -y python3-pip python3-venv git
+# For GeoPandas dependencies
+sudo apt-get install -y libspatialindex-dev libgeos-dev libproj-dev
+```
+
+**macOS (using Homebrew):**
+```bash
+brew install python@3.9
+brew install geos proj spatialindex
+brew install git
+```
 
 ## Installation
 
+### Option 1: Using run_analysis.bat (Windows)
+
+1. Download and extract the repository or clone it:
+   ```bash
+   git clone https://github.com/enjjalal/pipe_line_risk_analysis.git
+   cd pipe_line_risk_analysis
+   ```
+
+2. Run the setup script:
+   ```bash
+   run_analysis.bat
+   ```
+   This will:
+   - Create a virtual environment
+   - Install all required dependencies
+   - Run the analysis
+
+### Option 2: Manual Setup (All Platforms)
+
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd geo_spatial_h2
+   git clone https://github.com/enjjalal/pipe_line_risk_analysis.git
+   cd pipe_line_risk_analysis
    ```
 
 2. Create and activate a virtual environment:
+   - **Windows (Command Prompt):**
+     ```bash
+     python -m venv .venv
+     .venv\Scripts\activate
+     ```
+   - **Windows (PowerShell):**
+     ```powershell
+     python -m venv .venv
+     .\.venv\Scripts\Activate.ps1
+     ```
+   - **macOS/Linux:**
+     ```bash
+     python3 -m venv .venv
+     source .venv/bin/activate
+     ```
+
+3. Upgrade pip and install dependencies:
    ```bash
-   python -m venv .venv
-   .venv\Scripts\activate  # On Windows
-   # OR
-   source .venv/bin/activate  # On Unix/macOS
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
    ```
 
-3. Install dependencies:
+4. (Optional) Install development dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements-dev.txt  # If available
    ```
 
 ## Usage
@@ -44,8 +101,35 @@ This tool performs spatial risk analysis on pipeline infrastructure using sensor
 1. Ensure your input data is in the `integrate` directory
 2. Run the analysis script:
    ```bash
+   # Basic usage
    python spatial_risk_analysis.py
+   
+   # For large datasets, you can process in chunks
+   python spatial_risk_analysis.py --chunk-size 1000
+   
+   # To specify custom output directory
+   python spatial_risk_analysis.py --output-dir ./custom_output
    ```
+
+### Verifying the Installation
+
+Run the test suite (if available):
+```bash
+python -m pytest tests/
+```
+
+### Common Commands
+
+- Update the repository:
+  ```bash
+  git pull origin main
+  pip install -r requirements.txt  # If requirements changed
+  ```
+  
+- Run the machine learning pipeline:
+  ```bash
+  python pipeline_ml_model.py
+  ```
 
 ### Output Files
 
@@ -89,9 +173,40 @@ You can modify the following parameters in `spatial_risk_analysis.py`:
 
 ## Troubleshooting
 
-- **Missing Dependencies**: Ensure all required packages are installed
-- **Memory Issues**: For large datasets, consider processing in chunks
-- **Visualization Errors**: Some plots may fail with certain data types - check the console for specific error messages
+### Common Issues
+
+- **Missing Dependencies**:
+  ```bash
+  # If you get GeoPandas installation errors on Windows:
+  conda install -c conda-forge geopandas
+  
+  # Or try with pip (may require C++ build tools):
+  pip install --no-binary :all: geopandas
+  ```
+
+- **Memory Issues**:
+  - Process in chunks: `python spatial_risk_analysis.py --chunk-size 500`
+  - Increase swap space on Linux/macOS
+  - Close other memory-intensive applications
+
+- **Visualization Errors**:
+  - Install Graphviz: `conda install -c conda-forge python-graphviz`
+  - For Windows, download and install Graphviz from: https://graphviz.org/download/
+
+- **GitHub Authentication**:
+  If prompted for credentials, use a Personal Access Token (PAT) instead of password:
+  1. Create a PAT at: https://github.com/settings/tokens
+  2. Use the token as your password when pushing
+
+### Getting Help
+
+If you encounter any issues:
+1. Check the [GitHub Issues](https://github.com/enjjalal/pipe_line_risk_analysis/issues) page
+2. Include the following in your bug report:
+   - Operating System and version
+   - Python version (`python --version`)
+   - Full error message
+   - Steps to reproduce the issue
 
 ## License
 
