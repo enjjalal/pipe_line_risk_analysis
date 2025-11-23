@@ -1,22 +1,7 @@
 # Pipeline Risk Analysis Tool
 
-This tool performs spatial risk analysis on pipeline infrastructure using sensor data, soil properties, and terrain features to identify high-risk segments that may require maintenance or monitoring.
-
-## Features
-
-- **Risk Score Calculation**: Computes risk scores based on multiple factors
-- **Correlation Analysis**: Identifies relationships between different risk factors
-- **Spatial Visualization**: Generates maps showing risk distribution
-- **Segment Analysis**: Breaks down pipelines into manageable segments for detailed inspection
-- **Reporting**: Produces comprehensive reports and visualizations
-
-## Prerequisites
-
-- Python 3.8+
-- Git
-- Windows/macOS/Linux (tested on Windows 10/11, Ubuntu 20.04+)
-- At least 4GB RAM (8GB recommended for larger datasets)
-- 500MB free disk space
+![Pipeline Risk Map](visibles/spatial_risk_map.png)
+*Figure 1: Spatial distribution of pipeline risk scores*
 
 ### System Dependencies
 
@@ -39,60 +24,32 @@ brew install geos proj spatialindex
 brew install git
 ```
 
-## Installation
+## Quick Start
 
-### Option 1: Using run_analysis.bat (Windows)
-
-1. Download and extract the repository or clone it:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/enjjalal/pipe_line_risk_analysis.git
    cd pipe_line_risk_analysis
    ```
 
-2. Run the setup script:
+2. **Set up the environment**:
    ```bash
-   run_analysis.bat
-   ```
-   This will:
-   - Create a virtual environment
-   - Install all required dependencies
-   - Run the analysis
+   # Create and activate virtual environment
+   python -m venv .venv
+   .venv\Scripts\activate  # Windows
+   # OR
+   source .venv/bin/activate  # macOS/Linux
 
-### Option 2: Manual Setup (All Platforms)
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/enjjalal/pipe_line_risk_analysis.git
-   cd pipe_line_risk_analysis
-   ```
-
-2. Create and activate a virtual environment:
-   - **Windows (Command Prompt):**
-     ```bash
-     python -m venv .venv
-     .venv\Scripts\activate
-     ```
-   - **Windows (PowerShell):**
-     ```powershell
-     python -m venv .venv
-     .\.venv\Scripts\Activate.ps1
-     ```
-   - **macOS/Linux:**
-     ```bash
-     python3 -m venv .venv
-     source .venv/bin/activate
-     ```
-
-3. Upgrade pip and install dependencies:
-   ```bash
-   python -m pip install --upgrade pip
+   # Install requirements
    pip install -r requirements.txt
    ```
 
-4. (Optional) Install development dependencies:
+3. **Run the analysis**:
    ```bash
-   pip install -r requirements-dev.txt  # If available
+   python spatial_risk_analysis.py
    ```
+
+4. **View results** in the `visibles` directory
 
 ## Usage
 
@@ -131,31 +88,15 @@ python -m pytest tests/
   python pipeline_ml_model.py
   ```
 
-### Output Files
+## Key Visualizations
 
-The analysis generates the following outputs in the `visibles` directory:
+### 1. Correlation Analysis
+![Pearson Correlation Heatmap](visibles/pearson_correlation_heatmap.png)
+*Figure 2: Pearson correlation heatmap showing relationships between risk factors*
 
-- `high_risk_segments.geojson`: Geographic data of high-risk pipeline segments
-- `pearson_correlation_heatmap.png`: Heatmap of Pearson correlations
-- `spearman_correlation_heatmap.png`: Heatmap of Spearman correlations
-- `scatter_*.png`: Scatter plots of key variable relationships
-- `spatial_risk_map.png`: Map showing risk distribution
-- `correlation_report.txt`: Detailed correlation analysis
-- `segment_risk_statistics.txt`: Summary statistics of risk scores
-
-## Example Visualizations
-
-### 1. Spatial Risk Map
+### 2. Spatial Risk Distribution
 ![Spatial Risk Map](visibles/spatial_risk_map.png)
-*Figure 1: Geographic distribution of risk scores across pipeline segments.*
-
-### 2. Correlation Heatmap
-![Correlation Heatmap](visibles/pearson_correlation_heatmap.png)
-*Figure 2: Pearson correlation matrix showing relationships between different risk factors.*
-
-### 3. Example Scatter Plot
-![Example Scatter Plot](visibles/scatter_strain_vs_vibration.png)
-*Figure 3: Example scatter plot showing relationship between strain and vibration.*
+*Figure 1: Geographic visualization of pipeline risk scores (red = high risk, blue = low risk)*
 
 ## Interpreting Results
 
@@ -163,50 +104,33 @@ The analysis generates the following outputs in the `visibles` directory:
 - **High-Risk Segments**: Defined as segments with risk scores above the 67th percentile
 - **Correlation Values**: Range from -1 (perfect negative) to +1 (perfect positive)
 
-## Customization
+## Output Files
 
-You can modify the following parameters in `spatial_risk_analysis.py`:
+- `visibles/spatial_risk_map.png`: Geographic visualization of risk scores
+- `visibles/pearson_correlation_heatmap.png`: Correlation matrix of risk factors
+- `visibles/high_risk_segments.geojson`: GIS data of high-risk segments
+- `visibles/segment_risk_statistics.txt`: Summary statistics
+- `ml_results/`: Contains trained models and ML evaluation metrics
 
-- `segment_length` in `create_segments_from_sensors()`: Adjust the length of pipeline segments (default: 200m)
-- Weights in `calculate_risk_score()`: Adjust the importance of different risk factors
-- Visualization parameters: Modify figure sizes, colors, and styles as needed
+## Common Issues
 
-## Troubleshooting
-
-### Common Issues
-
-- **Missing Dependencies**:
+- **Installation Problems**:
   ```bash
-  # If you get GeoPandas installation errors on Windows:
-  conda install -c conda-forge geopandas
+  # On Windows, install C++ build tools first:
+  # https://visualstudio.microsoft.com/visual-cpp-build-tools/
   
-  # Or try with pip (may require C++ build tools):
-  pip install --no-binary :all: geopandas
+  # Then install requirements:
+  pip install --upgrade pip
+  pip install -r requirements.txt
   ```
 
-- **Memory Issues**:
-  - Process in chunks: `python spatial_risk_analysis.py --chunk-size 500`
-  - Increase swap space on Linux/macOS
-  - Close other memory-intensive applications
+- **Running out of memory**:
+  ```bash
+  # Process in smaller chunks
+  python spatial_risk_analysis.py --chunk-size 1000
+  ```
 
-- **Visualization Errors**:
-  - Install Graphviz: `conda install -c conda-forge python-graphviz`
-  - For Windows, download and install Graphviz from: https://graphviz.org/download/
-
-- **GitHub Authentication**:
-  If prompted for credentials, use a Personal Access Token (PAT) instead of password:
-  1. Create a PAT at: https://github.com/settings/tokens
-  2. Use the token as your password when pushing
-
-### Getting Help
-
-If you encounter any issues:
-1. Check the [GitHub Issues](https://github.com/enjjalal/pipe_line_risk_analysis/issues) page
-2. Include the following in your bug report:
-   - Operating System and version
-   - Python version (`python --version`)
-   - Full error message
-   - Steps to reproduce the issue
+For additional help, please [open an issue](https://github.com/enjjalal/pipe_line_risk_analysis/issues)
 
 ## License
 
