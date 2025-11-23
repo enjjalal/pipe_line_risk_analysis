@@ -88,12 +88,29 @@ python -m pytest tests/
 ## Key Visualizations
 
 ### 1. Correlation Analysis
-![Pearson Correlation Heatmap](visibles/pearson_correlation_heatmap.png)
-*Figure 2: Pearson correlation heatmap showing relationships between risk factors*
+<img src="visibles/pearson_correlation_heatmap.png" width="400">
+*Figure 1: Pearson correlation heatmap showing relationships between risk factors*
 
 ### 2. Spatial Risk Distribution
-![Spatial Risk Map](visibles/spatial_risk_map.png)
+<img src="visibles/spatial_risk_map.png" width="400">
 *Figure 2: Geographic visualization of pipeline risk scores (red = high risk, blue = low risk)*
+
+### 3. Machine Learning Results
+
+#### Classification Performance
+<img src="ml_results/confusion_matrix.png" width="350">
+*Figure 3: Confusion matrix showing classification performance*
+
+#### Regression Predictions
+<img src="ml_results/regression_predictions.png" width="400">
+*Figure 4: Actual vs. predicted risk scores from the regression model*
+
+#### Feature Importance
+<div style="display: flex; justify-content: space-between;">
+  <img src="ml_results/feature_importance_regression.png" width="45%">
+  <img src="ml_results/feature_importance_classification.png" width="45%">
+</div>
+*Figure 5: Feature importance for regression (left) and classification (right) models*
 
 ## Interpreting Results
 
