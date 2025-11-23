@@ -1,8 +1,5 @@
 # Pipeline Risk Analysis Tool
 
-![Pipeline Risk Map](visibles/spatial_risk_map.png)
-*Figure 1: Spatial distribution of pipeline risk scores*
-
 ### System Dependencies
 
 **Windows:**
@@ -96,7 +93,7 @@ python -m pytest tests/
 
 ### 2. Spatial Risk Distribution
 ![Spatial Risk Map](visibles/spatial_risk_map.png)
-*Figure 1: Geographic visualization of pipeline risk scores (red = high risk, blue = low risk)*
+*Figure 2: Geographic visualization of pipeline risk scores (red = high risk, blue = low risk)*
 
 ## Interpreting Results
 
